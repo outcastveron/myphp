@@ -21,6 +21,7 @@ if($info->status !== '0'){
 }
 $liveUrl = $info->data->live_url;
 header('Location:'.$liveUrl);
+
 function get_url($cid, $qa){
   $url = "https://m.fengshows.com/api/v3/hub/live/auth-url?live_id={$cid}&live_qa={$qa}";
   $response = get_data($url);
