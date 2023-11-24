@@ -1,3 +1,5 @@
+<?php
+//error_reporting(0);
 $id=isset($_GET['id'])?$_GET['id']:'szws';
 $n = [
 'szws' => 'AxeFRth', //深圳卫视
@@ -21,3 +23,19 @@ $sign = md5('bf9b2cab35a9c38857b82aabf99874aa96b9ffbb/'.$n[$id].'/500/'.$pname.'
 $m3u8 = 'https://sztv-live.cutv.com/'.$n[$id].'/500/'.$pname.'.m3u8?sign='.$sign.'&t='.dechex($t+36000);
 header('Location:'.$m3u8);//http头还要加referer：https://www.sztv.com.cn/
 echo $m3u8;
+//echo $playurl;
+function get_data($bstrURL){
+$header=array(
+             "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64) AppleWebKit/536.26 (KHTML, like Gecko)  Chrome/86.0.3282.186 Safari/537.36 ",
+             "Referer: https://www.sztv.com.cn/",
+             );   
+$ch = curl_init($bstrURL);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+$data = curl_exec($ch);
+curl_close($ch);
+return $data;
+}
+?>
