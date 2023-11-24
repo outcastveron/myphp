@@ -21,8 +21,7 @@ $bstrURL = "http://cls2.cutv.com/getCutvHlsLiveKey?t=".$t."&token=".$token."&id=
 $pname = file_get_contents($bstrURL);
 $sign = md5('bf9b2cab35a9c38857b82aabf99874aa96b9ffbb/'.$n[$id].'/500/'.$pname.'.m3u8'.dechex($t+36000));   //加36000秒
 $m3u8 = 'https://sztv-live.cutv.com/'.$n[$id].'/500/'.$pname.'.m3u8?sign='.$sign.'&t='.dechex($t+36000);
-header('Location:'.$m3u8);//http头还要加referer：https://www.sztv.com.cn/
-echo $m3u8;
+header('Location:'.$m3u8);
 //echo $playurl;
 function get_data($bstrURL){
 $header=array(
@@ -38,4 +37,5 @@ $data = curl_exec($ch);
 curl_close($ch);
 return $data;
 }
+
 ?>
