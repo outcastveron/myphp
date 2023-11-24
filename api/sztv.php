@@ -1,4 +1,3 @@
-<?php
 $id=isset($_GET['id'])?$_GET['id']:'szws';
 $n = [
 'szws' => 'AxeFRth', //深圳卫视
@@ -22,4 +21,3 @@ $sign = md5('bf9b2cab35a9c38857b82aabf99874aa96b9ffbb/'.$n[$id].'/500/'.$pname.'
 $m3u8 = 'https://sztv-live.cutv.com/'.$n[$id].'/500/'.$pname.'.m3u8?sign='.$sign.'&t='.dechex($t+36000);
 header('Location:'.$m3u8);//http头还要加referer：https://www.sztv.com.cn/
 echo $m3u8;
-?>
