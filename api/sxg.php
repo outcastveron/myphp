@@ -3,7 +3,7 @@ date_default_timezone_set("Asia/Shanghai");
 $channel = empty($_GET['id']) ? "emdy4k_8000" : trim($_GET['id']);
 $array = explode("_", $channel);
 if (isset($array[1])) {
-    $stream = "http://[240e:944:6::22]/live2.rxip.sc96655.com/live/8ne5i_sccn,{$array[0]}_hls_pull_{$array[1]}K/";
+    $stream = "http://[2409:8c02:21c:60::2b]/live2.rxip.sc96655.com/live/8ne5i_sccn,{$array[0]}_hls_pull_{$array[1]}K/";
 } else {
     $stream = "http://[240e:944:6::22]/live2.rxip.sc96655.com/live/8ne5i_sccn,{$array[0]}_hls_pull_4000K/";
 }
