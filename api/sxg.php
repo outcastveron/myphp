@@ -5,7 +5,7 @@ $array = explode("_", $channel);
 if (isset($array[1])) {
     $stream = "http://[2409:8c02:21c:60::2b]/live2.rxip.sc96655.com/live/8ne5i_sccn,{$array[0]}_hls_pull_{$array[1]}K/";
 } else {
-    $stream = "http://[240e:944:6::22]/live2.rxip.sc96655.com/live/8ne5i_sccn,{$array[0]}_hls_pull_4000K/";
+    $stream = "http://[2409:8c02:21c:60::2b]/live2.rxip.sc96655.com/live/8ne5i_sccn,{$array[0]}_hls_pull_4000K/";
 }
 $timestamp = intval((time() - 60) / 6);
 $current = "#EXTM3U" . "\r\n";
