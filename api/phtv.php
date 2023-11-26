@@ -14,8 +14,8 @@
     }
 
     $headers = array(
-        'fengshows-client: app(ios,5041001);iPhone13,4;17.1.1',
-        'User-Agent: FengWatch/5.4.10 (iPhone; iOS 17.1.1; Scale/3.00)'
+        'fengshows-client: app(android,5010208);23',
+        'User-Agent: okhttp/3.11.0'
     );
     $bstrURL = "https://m.fengshows.com/api/v3/live?live_type=tv&page=1&page_size=15";
     $ch = curl_init();
@@ -42,10 +42,10 @@
      */
 
     $loginData = [
-        "phone"=>"5708616166", // 手机号码登陆方式，这里是你的手机号
+        "phone"=>"13810616166", // 手机号码登陆方式，这里是你的手机号
         "password"=>"Limiao19820326", // 密码
         "ticket"=>$ticket,
-        "code"=>"1"
+        "code"=>"86"
 
     ];
    
