@@ -1,6 +1,6 @@
 <?php
    
-    $id = $_GET['id']-1; // 1 = 资讯  2 = 中文  3 = 深圳旁边
+    $id = $_GET['id']-1; // 1 = 资讯  2 = 中文  3 = 香港
 
     $public_key = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsMwDFK9QtawzMO7Df8clvO/gmVbpJ10CRz8uvq2pH4+700yURMgHWiMsIsUza0MPEgIffCAFtn4n0wk+arEcm2/vQd+5ebe0urgpGjl64SST0BxMSNgOWHCmKe7jVNWx6OusSUasDD+ieXChjjMDAaoH0Qx2g2Lg5Zu00abJv+QIDAQAB';
     $public_key = "-----BEGIN PUBLIC KEY-----\n".wordwrap($public_key, 64, "\n", true) . "\n-----END PUBLIC KEY-----";
