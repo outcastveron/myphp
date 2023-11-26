@@ -14,8 +14,8 @@
     }
 
     $headers = array(
-        'fengshows-client: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.1 Mobile/15E148 Safari/604.1',
-        'User-Agent: app(fs-web,1000000)'
+        'fengshows-client: app(ios,5041001);iPhone13,4;17.1.1',
+        'User-Agent: FengWatch/5.4.10 (iPhone; iOS 17.1.1; Scale/3.00)'
     );
     $bstrURL = "https://m.fengshows.com/api/v3/live?live_type=tv&page=1&page_size=15";
     $ch = curl_init();
