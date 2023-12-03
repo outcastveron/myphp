@@ -6,7 +6,7 @@ $content = "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:10\n#EXT-X-MEDIA-SE
 for($i=0;$i<7;$i++)
 {
     $content.="#EXTINF:10.0,\n";
-    $content.="http://live3.hrtn.net/live/{$id}/{$id}_".strval($seq+$i).".ts\n";
+    $content.="http://live1.hrtn.net/live/{$id}/{$id}_".strval($seq+$i).".ts\n";
 }
 
 header("Content-Type: application/vnd.apple.mpegURL");
