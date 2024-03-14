@@ -1,11 +1,5 @@
 <?php
 
-if (function_exists('curl_init')) {
-    echo 'cURL extension is enabled.';
-} else {
-    echo 'cURL extension is not enabled.';
-}
-
 ini_set('date.timezone','Asia/Shanghai');
 set_time_limit(300);
 
