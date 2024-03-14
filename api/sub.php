@@ -5,7 +5,6 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://host.ssrbox.com/api/v1/client/subscribe?token=210989356ed1cc904b2c27ac66fb6796',
   'https://m11.spwvpn.com/api/v1/client/subscribe?token=319f2c1bdcb78325ec193dec5d00226a',
   'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
 ];
