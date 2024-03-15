@@ -5,8 +5,8 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://3h.lv/api/v1/client/subscribe?token=32df6680956d6fc43bceea2a0b49202c',
-  'https://m11.spwvpn.com/api/v1/client/subscribe?token=319f2c1bdcb78325ec193dec5d00226a',
+  'https://raw.githubusercontent.com/txmiaomiaowu/openitr/main/long',
+  'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
   'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
 ];
 
