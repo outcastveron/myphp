@@ -7,6 +7,7 @@ set_time_limit(300);
 $subUrlList = [
   'https://raw.githubusercontent.com/txmiaomiaowu/openitr/main/long',
   'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',
+  'https://sub.5112233.xyz/auto',
   'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
 ];
 
