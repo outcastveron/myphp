@@ -21,10 +21,8 @@ try {
   $subString = fetchContent($url);
   $subContent = base64_decode(trim($subString));
 
-  // 将解码后的内容分割成行
-  $lines = explode("\n", $subContent);
-
-  // 使用 array_unique() 函数去除重复行
+  // 使用正则表达式匹配重复行
+  $lines = preg_split("/\r?\n/", $subContent);
   $lines = array_unique($lines);
 
   // 将去重后的行合并成字符串
