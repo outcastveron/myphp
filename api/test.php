@@ -34,6 +34,7 @@ try {
  $result = implode("\n", $allList);
  $result = base64_encode($result);
 
+ // 输出最终的 base64 结果
  echo $result;
 } catch (Exception $e) {
  var_dump($e->getMessage());
