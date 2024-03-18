@@ -28,6 +28,9 @@ try {
  // 删除重复条目
  $allList = array_unique($allList);
 
+ // 重新排序数组
+ $allList = array_values($allList);
+
  $result = implode("\n", $allList);
  $result = base64_encode($result);
 
