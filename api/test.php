@@ -14,52 +14,30 @@ $subUrlList = [
  'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
 ];
 
-// 存储所有订阅内容的数组
-$allList = [];
+try {
+ $allList = [];
+ $allListMap = [];
 
-// 存储去重后的订阅内容的数组
-$uniqueList = [];
-
-// 遍历订阅链接列表
-foreach ($subUrlList as $url) {
-  // 获取订阅内容
+ foreach ($subUrlList as $url) {
   $subString = fetchContent($url);
-  // 解码 base64
   $subContent = base64_decode(trim($subString));
 
-  // 解析订阅内容
-  $lines = explode("\n", $subContent);
-  foreach ($lines as $line) {
-    // 分割 IP 和端口
-    $parts = explode(":", $line);
-    if (count($parts) != 2) {
-      continue;
-    }
-
-    // 获取 IP 和端口
-    $ip = $parts[0];
-    $port = $parts[1];
-
-    // 生成唯一标识
-    $uniqueKey = $ip . ":" . $port;
-
-    // 判断是否重复
-    if (!isset($uniqueList[$uniqueKey])) {
-      // 添加到去重列表
-      $uniqueList[$uniqueKey] = true;
-      // 添加到所有订阅列表
-      $allList[] = $line;
+  // 合并重复条目
+  foreach (explode("\n", $subContent) as $line) {
+    if (!isset($allListMap[$line])) {
+      $allListMap[$line] = true;
+      array_push($allList, $line);
     }
   }
+ }
+
+ $result = implode("\n", $allList);
+ $result = base64_encode($result);
+
+ echo $result;
+} catch (Exception $e) {
+ var_dump($e->getMessage());
 }
-
-// 合并所有订阅内容
-$result = implode("\n", $allList);
-// 编码为 base64
-$result = base64_encode($result);
-
-// 输出结果
-echo $result;
 
 function fetchContent($url) {
  $ch = curl_init();
