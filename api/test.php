@@ -5,56 +5,53 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
- 'https://raw.githubusercontent.com/txmiaomiaowu/openitr/main/long',
- 'https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity',
- 'https://raw.githubusercontent.com/obscure1990/freeVM/master/list.txt',
- 'https://raw.githubusercontent.com/wudongdefeng/free/main/freevm/list.txt',
- 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num',
- 'https://sub.5112233.xyz/auto',
- 'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
+ 'https://raw.githubusercontent.com/txmiaomiaowu/openitr/main/long',
+ 'https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity',
+ 'https://raw.githubusercontent.com/obscure1990/freeVM/master/list.txt',
+ 'https://raw.githubusercontent.com/wudongdefeng/free/main/freevm/list.txt',
+ 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num',
+ 'https://sub.5112233.xyz/auto',
+ 'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
 ];
 
 try {
- $allList = [];
+ $allList = [];
 
- foreach ($subUrlList as $url) {
-  $subString = fetchContent($url);
-  $subContent = base64_decode(trim($subString));
+ foreach ($subUrlList as $url) {
+  $subString = fetchContent($url);
+  $subContent = base64_decode(trim($subString));
 
-  // 使用正则表达式匹配重复行
-  $lines = preg_split("/\r?\n/", $subContent);
-  $lines = array_unique($lines);
+  $subContentArray = explode("\n", $subContent);
+  $allList = array_merge($allList, $subContentArray);
+ }
 
-  // 将去重后的行合并成字符串
-  $subContent = implode("\n", $lines);
+ // 删除重复条目
+ $allList = array_unique($allList);
 
-  array_push($allList, $subContent);
- }
+ $result = implode("\n", $allList);
+ $result = base64_encode($result);
 
- $result = implode("\n", $allList);
- $result = base64_encode($result);
-
- echo $result;
+ echo $result;
 } catch (Exception $e) {
- var_dump($e->getMessage());
+ var_dump($e->getMessage());
 }
 
 function fetchContent($url) {
- $ch = curl_init();
+ $ch = curl_init();
 
- curl_setopt($ch, CURLOPT_URL, $url);
- curl_setopt($ch, CURLOPT_POST, 0);
- curl_setopt($ch, CURLOPT_HEADER, 0);
- curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+ curl_setopt($ch, CURLOPT_URL, $url);
+ curl_setopt($ch, CURLOPT_POST, 0);
+ curl_setopt($ch, CURLOPT_HEADER, 0);
+ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
- curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 
- curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
- curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 
- $rs = curl_exec($ch);
+ $rs = curl_exec($ch);
 
- curl_close($ch);
+ curl_close($ch);
 
- return $rs;
+ return $rs;
 }
