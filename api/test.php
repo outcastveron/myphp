@@ -29,8 +29,13 @@ try {
 
         // 去重
         foreach ($nodes as $node) {
-            if (!in_array($node, $subscribedList)) {
-                $subscribedList[] = $node;
+            // 解析节点信息
+            $info = parseNode($node);
+
+            // 判断节点是否已订阅
+            $key = $info['ip'] . ':' . $info['port'];
+            if (!in_array($key, $subscribedList)) {
+                $subscribedList[] = $key;
                 $allList[] = $node;
             }
         }
@@ -62,4 +67,24 @@ function fetchContent($url) {
     curl_close($ch);
 
     return $rs;
+}
+
+function parseNode($node) {
+    $info = [];
+
+    // 分割节点信息
+    $parts = explode(':', $node);
+
+    // 获取 IP 地址
+    $info['ip'] = $parts[0];
+
+    // 获取端口
+    $info['port'] = $parts[1];
+
+    // 获取其他信息 (可选)
+    if (isset($parts[2])) {
+        $info['other'] = $parts[2];
+    }
+
+    return $info;
 }
