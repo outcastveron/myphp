@@ -16,20 +16,20 @@ $subUrlList = [
 
 try {
  $allList = [];
- $allListMap = [];
+
+ // 使用 HashSet 来存储所有订阅内容，并自动去重
+ $allSet = new HashSet();
 
  foreach ($subUrlList as $url) {
   $subString = fetchContent($url);
   $subContent = base64_decode(trim($subString));
 
-  // 合并重复条目
-  foreach (explode("\n", $subContent) as $line) {
-    if (!isset($allListMap[$line])) {
-      $allListMap[$line] = true;
-      array_push($allList, $line);
-    }
-  }
+  // 将解码后的内容添加到 HashSet 中
+  $allSet->add($subContent);
  }
+
+ // 将 HashSet 中的内容转换为数组
+ $allList = array_values($allSet->toArray());
 
  $result = implode("\n", $allList);
  $result = base64_encode($result);
@@ -58,3 +58,4 @@ function fetchContent($url) {
 
  return $rs;
 }
+
