@@ -17,24 +17,25 @@ $subUrlList = [
 try {
  $allList = [];
 
- // 使用 HashSet 来存储所有订阅内容，并自动去重
- $allSet = new HashSet();
-
  foreach ($subUrlList as $url) {
   $subString = fetchContent($url);
   $subContent = base64_decode(trim($subString));
 
-  // 将解码后的内容添加到 HashSet 中
-  $allSet->add($subContent);
- }
+  // 将解码后的内容分割成行
+  $lines = explode("\n", $subContent);
 
- // 将 HashSet 中的内容转换为数组
- $allList = array_values($allSet->toArray());
+  // 使用 array_unique() 函数去除重复行
+  $lines = array_unique($lines);
+
+  // 将去重后的行合并成字符串
+  $subContent = implode("\n", $lines);
+
+  array_push($allList, $subContent);
+ }
 
  $result = implode("\n", $allList);
  $result = base64_encode($result);
 
- // 输出最终的 base64 结果
  echo $result;
 } catch (Exception $e) {
  var_dump($e->getMessage());
@@ -59,4 +60,3 @@ function fetchContent($url) {
 
  return $rs;
 }
-
