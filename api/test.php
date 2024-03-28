@@ -5,11 +5,8 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://raw.githubusercontent.com/txmiaomiaowu/openitr/main/long',
-  'https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity',
-  'https://raw.githubusercontent.com/obscure1990/freeVM/master/list.txt',
-  'https://raw.githubusercontent.com/wudongdefeng/free/main/freevm/list.txt',
-  'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num',
+  'http://sub.avotc.eu.org/?token=auto',
+  'https://sub.sanxia.eu.org/cross',
 ];
 
 try {
