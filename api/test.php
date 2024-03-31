@@ -6,7 +6,12 @@ set_time_limit(300);
 // 订阅链接的列表
 $subUrlList = [
   'http://sub.avotc.eu.org/?token=auto',
-  'https://sub.sanxia.eu.org/cross',
+  'https://sub.kaiche.tk/?token=auto',
+  'http://allsub.king361.cf/',
+  'https://vless.fxxk.dedyn.io/auto',
+  'https://subsub.crpcg.tk/sub',
+  'https://dy.twittei.link/auto',
+  'https://cm8.rr.nu/lucky',  
 ];
 
 try {
