@@ -1,7 +1,7 @@
 <?php
 
 ini_set('date.timezone','Asia/Shanghai');
-set_time_limit(600);
+set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
