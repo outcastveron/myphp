@@ -7,7 +7,6 @@ set_time_limit(300);
 $subUrlList = [
   'https://sub.tgzdyz2.xyz/sub',
   'https://sub.5112233.xyz/auto',
-  'https://sub3.jie-quick.buzz/api/v1/client/subscribe?token=4922263ac084a8daa39c93b38c3772fc',
 ];
 
 try {
