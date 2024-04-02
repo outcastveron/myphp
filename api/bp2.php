@@ -5,9 +5,8 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'http://sub.avotc.eu.org/?token=auto',
   'https://sub.kaiche.tk/?token=auto',
-  'http://allsub.king361.cf/',
+  'https://moistr.freenods.sbs/mianfei',
   'https://subsub.crpcg.tk/sub',
   'https://dy.twittei.link/auto',
   ];
