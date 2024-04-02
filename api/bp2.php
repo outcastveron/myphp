@@ -8,11 +8,9 @@ $subUrlList = [
   'http://sub.avotc.eu.org/?token=auto',
   'https://sub.kaiche.tk/?token=auto',
   'http://allsub.king361.cf/',
-  'https://vless.fxxk.dedyn.io/auto',
   'https://subsub.crpcg.tk/sub',
   'https://dy.twittei.link/auto',
-  'https://cm8.rr.nu/lucky',  
-];
+  ];
 
 try {
   $allList = [];
