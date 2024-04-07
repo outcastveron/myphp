@@ -7,7 +7,7 @@ set_time_limit(300);
 $subUrlList = [
   'https://sub.kaiche.tk/?token=auto',
   'https://moistr.freenods.sbs/mianfei',
-  'https://subsub.crpcg.tk/sub',
+  'https://goooogle.ggff.net/lucky',
   'https://dy.twittei.link/auto',
   ];
 
