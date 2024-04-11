@@ -5,7 +5,7 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://sub.kaiche.tk/?token=auto',
+  'https://sub.cf6.rr.nu/lucky',
   'https://moistr.freenods.sbs/mianfei',
   'https://goooogle.ggff.net/lucky',
   'https://dy.twittei.link/auto',
