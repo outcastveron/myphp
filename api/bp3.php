@@ -5,7 +5,7 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://cm8.rr.nu/lucky', 
+  'https://sub.kaiche.tk/?token=auto', 
   'https://vless.fxxk.dedyn.io/auto',
   'https://vmess.fxxk.dedyn.io/auto',
   ];
