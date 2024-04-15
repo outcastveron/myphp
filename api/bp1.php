@@ -7,7 +7,7 @@ set_time_limit(300);
 $subUrlList = [
   'https://sub.tgzdyz2.xyz/sub',
   'https://sub.5112233.xyz/auto',
-  'https://vps.duckking.shop:41234/s/default/9f69ece5254304acb407ec261a7acf1f',
+  'https://rvps.duckking.shop:26720/s/default/834cd390f794960dc77653e5a4bc036d',
 ];
 
 try {
