@@ -5,8 +5,8 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://sub.tgzdyz2.xyz/sub',
   'https://sub.5112233.xyz/auto',
+  'https://sub.tgzdyz2.xyz/sub',
   'https://chromenodes.marcol.top',
   'https://chromego-sub.netlify.app/sub/base64.txt',
   'https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/base64.txt',
