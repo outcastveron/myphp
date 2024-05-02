@@ -8,6 +8,7 @@ $subUrlList = [
   'https://zero.76898102.xyz/link/rWdgl3mSG2hklCsG?sub=3',
   'https://xn--rssy0da8807a.cc/api/v1/client/subscribe?token=e454ad5e18859d2a093b78d94c3f9b37',
   'https://sub12316.tnetvpn.site/api/v1/client/subscribe?token=e6f86acae267cf3ce87fba50d639509f',
+  'https://sub46299.yljc.online/api/v1/client/subscribe?token=5320b3bb55386c9a003de157df3839a5',
   'https://rvps.duckking.shop:26720/s/default/764ed3a1a918ee05994ba37a1340ca29',
 ];
 
