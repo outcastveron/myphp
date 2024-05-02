@@ -8,6 +8,7 @@ $subUrlList = [
   'https://sub.kaiche.tk/?token=auto', 
   'https://links.bocchi2b.top/clash',
   'https://sub.443888.xyz/vless',
+  'https://zysj.202030.xyz/shijier',
   'https://vless.fxxk.dedyn.io/auto',
   'https://vmess.fxxk.dedyn.io/auto',
   ];
