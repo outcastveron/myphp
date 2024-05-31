@@ -10,6 +10,7 @@ $subUrlList = [
   'https://raw.githubusercontent.com/chxxyz2004/banyun/main/trial',
   'https://raw.githubusercontent.com/pathetimanity/TyporaTheme/main/trial',
   'https://raw.githubusercontent.com/hawk0344/Auto_AirPort/main/trial',
+  'https://raw.githubusercontent.com/dbconf/ausub/sub/trial',
 ];
 
 try {
