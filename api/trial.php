@@ -11,6 +11,7 @@ $subUrlList = [
   'https://raw.githubusercontent.com/pathetimanity/TyporaTheme/main/trial',
   'https://raw.githubusercontent.com/hawk0344/Auto_AirPort/main/trial',
   'https://raw.githubusercontent.com/Cheemsar/cheemsar.sub/main/trial',
+  'https://sub.id9.cc/sub?target=v2ray&url=https%3A%2F%2Fraw.githubusercontent.com%2Fgyc-12%2Faggregator%2Fmain%2Faggregate%2Fdata%2Fproxies.yaml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini',
 ];
 
 try {
