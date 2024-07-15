@@ -7,7 +7,6 @@ set_time_limit(300);
 $subUrlList = [
   'https://sub.kaiche.tk/?token=auto', 
   'https://links.bocchi2b.top/clash',
-  'https://sub.443888.xyz/vless',
   'https://vless.fxxk.dedyn.io/auto',
   'https://vmess.fxxk.dedyn.io/auto',
   ];
