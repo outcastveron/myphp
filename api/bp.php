@@ -5,11 +5,11 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'http://panda.切底锚栓.com/api/v1/client/subscribe?token=3a3a14f2d494670a29b9bc61bff9d58d',
-  'https://sub2.591haoka.com/api/v1/client/subscribe/token=9e48312624d64c219f8e7u9af55b4k238d56',
-  'hhttps://sub1.tg-mfjd666.cloudns.be/api/v1/client/subscribe/token=598adee7147c414593f29c74cfade831f4d95313f786bb749ca643ea23bb0fd3',
-  'https://sub2.591haoka.com/api/v1/client/subscribe/token=9e48312624d64c219f8e7u9af55b4k238d56',
-  'https://wwe.trx1.cyou/api/v1/client/subscribe?token=a2e3729beea68d94f36ef196b0c9c062',
+  'https://sub.mxlweb.xyz/fox',
+  'https://sub2.smallstrawberry.com/api/v1/client/subscribe?token=80028d75d77169a7fec5827b69fc87d7',
+  'https://fovt.tech/api/v1/client/subscribe?token=f085ea1a2230d28aa97abd5041ff8b51',
+  'https://fovt.tech/api/v1/client/subscribe?token=cbb732b35015eb3b1eb6351ea777f7a5',
+  'https://dwz.vg/fussy',
   'https://rvps.duckking.shop:26720/s/default/764ed3a1a918ee05994ba37a1340ca29',
   'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Frss202407.mugua-sub.com%2Flink%2FKJcTUT9qI39U4bMr%3Fclash%3D1&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
   'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmjjjd%2Flinuxdo%40main%2Fdata%2F2024_07_10%2FdswnxV.yaml&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
