@@ -5,11 +5,11 @@ set_time_limit(300);
 
 // 订阅链接的列表
 $subUrlList = [
-  'https://sub.mxlweb.xyz/fox',
+  'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Fclash.fox.mn%2F&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
   'https://sub2.smallstrawberry.com/api/v1/client/subscribe?token=80028d75d77169a7fec5827b69fc87d7',
-  'https://fovt.tech/api/v1/client/subscribe?token=f085ea1a2230d28aa97abd5041ff8b51',
-  'https://fovt.tech/api/v1/client/subscribe?token=cbb732b35015eb3b1eb6351ea777f7a5',
-  'https://dwz.vg/fussy',
+  'https://sub.ztyawc.us.kg/zzzjp',
+  'https://tomproxy.us.kg/api/v1/index.php?token=linuxdo2',
+  'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Fraw.githubusercontent.com%2Fanaer%2FSub%2Fmain%2Fclash.yaml&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
   'https://rvps.duckking.shop:26720/s/default/764ed3a1a918ee05994ba37a1340ca29',
   'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Frss202407.mugua-sub.com%2Flink%2FKJcTUT9qI39U4bMr%3Fclash%3D1&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
   'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmjjjd%2Flinuxdo%40main%2Fdata%2F2024_07_10%2FdswnxV.yaml&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
