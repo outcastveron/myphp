@@ -11,7 +11,7 @@ $subUrlList = [
   'http://106.75.178.88:82/api/v1/client/subscribe?token=3054da66436dba0c9f66cfbcb79c7199',
   'https://selinux.link/api/v1/client/subscribe?token=de9706e1-7b34-4420-908d-de94c5fac34f',
   'https://rack.waqian.link/s/default/6c00a6232d66a532163c91eff510098e',
-  'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmjjjd%2Flinuxdo%40main%2Fdata%2F2024_07_10%2FdswnxV.yaml&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
+  'https://fly.thenightrain.top/api/v1/client/subscribe?token=195cf12e4877f5c814a7a62c4a0079b7',
 ];
 
 try {
