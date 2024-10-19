@@ -10,7 +10,7 @@ $subUrlList = [
   'https://rvps.duckking.shop:26720/s/default/764ed3a1a918ee05994ba37a1340ca29',
   'http://106.75.178.88:82/api/v1/client/subscribe?token=3054da66436dba0c9f66cfbcb79c7199',
   'https://selinux.link/api/v1/client/subscribe?token=de9706e1-7b34-4420-908d-de94c5fac34f',
-  'https://rack.waqian.link/s/default/6c00a6232d66a532163c91eff510098e',
+  'https://v2b.hinetlove.site/api/v1/client/subscribe?token=0f51ebe437aad648d7ca71b3a6ff35a7',
   'https://fly.thenightrain.top/api/v1/client/subscribe?token=195cf12e4877f5c814a7a62c4a0079b7',
 ];
 
