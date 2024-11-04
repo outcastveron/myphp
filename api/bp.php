@@ -6,6 +6,7 @@ set_time_limit(300);
 // 订阅链接的列表
 $subUrlList = [
   'https://sub.ztyawc.us.kg/zzzjp',
+  'https://rvps.duckking.shop:26720/s/default/764ed3a1a918ee05994ba37a1340ca29',
   'https://id9.cc/sub?target=v2ray&url=https%3A%2F%2Fraw.githubusercontent.com%2Fanaer%2FSub%2Fmain%2Fclash.yaml&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false',
   'https://app.jisovpn.site/api/v1/client/subscribe?token=fae9ac4bac4624f9e2eca15293b953f6',
   'http://106.75.178.88:82/api/v1/client/subscribe?token=3054da66436dba0c9f66cfbcb79c7199',
